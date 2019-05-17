@@ -21,19 +21,57 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		
+		<style>
+		#test {
+			width: 450px;
+			height: 150px;
+			border: 0px solid black;
+			transform-origin: 50% 50%;
+			color: red;
+		}
+
+		@-webkit-keyframes rotating {
+			from{
+				-webkit-transform: rotate(0deg);
+			}
+			to{
+				-webkit-transform: rotate(360deg);
+			}
+		}
+		.rotating {
+			-webkit-animation: rotating 2s linear infinite;
+		}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="img/1.gif">
+				<section data-background="img/batman.gif">
 						<h1>Agile france 2019</h1>
 						<h2>LA DOCUMENTATION UTILE !</h2>
 						<h3>TBO & EBO</h3>
 						<h4>Développeurs, passionnés et fiers</h4>
 				</section>
-				<section><img src="img/1.gif"/></section>
-				<section><img src="img/2.gif"/></section>
-			</div>
+				<section data-background="img/obvious.gif">
+					<h3 style="color:black;">Documenter, oui ! mais il faut que la documentation soit agile ! </h3>
+				</section>
+				<section data-background="img/homer.gif">
+					<h1 style="color:white;">MAIS</h1>
+				</section>
+				<section data-background="img/archeology.gif">
+					<span class="fragment"><img width="150px" src="img/a1.jpg"/></span>
+					<span class="fragment">Toujours avoir</span>
+					<span class="fragment"><img width="150px" src="img/a2.jpg"/></span>
+					<span class="fragment">le contexte</span>	
+					<span class="fragment"><img width="150px" src="img/a3.jpg"/></span>
+					<span class="fragment">pour piger au moins</span>
+					<span class="fragment"><img width="150px" src="img/a4.jpg"/></span>
+					<span class="fragment">un broc de ce que ça raconte !!!</span>
+				</section>
+				<section data-background="img/commitallegory.gif">
+					<h1 id="test" class="rotating">GIT</h1>
+				</section>
 		</div>
 
 		<script src="js/reveal.js"></script>
