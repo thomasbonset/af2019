@@ -30,3 +30,9 @@
 	color:LightGrey !important;
 	text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px !important;
 }
+
+.imageWithoutBorder {
+	border:0px !important;
+	
+}
+
